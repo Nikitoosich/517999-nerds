@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Юлия Саенко](https://up.htmlacademy.ru/htmlcss/22/user/517999).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Сушко](https://htmlacademy.ru/profile/sashasushko).
 
 ---
 
