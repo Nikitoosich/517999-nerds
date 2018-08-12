@@ -8,137 +8,125 @@
 
 <body>
   <header class="main-header">
-   <h1 class="page-title">Магазин готовых шаблонов</h1>
-    <nav class="main-navigation" aria-label="Навигация по сайту">
-      <a class="main-header-logo" href="index.html"> <!--нужны ли всплывающие подсказки к а?-->
-          <img src="main-logo.svg" width="" height="" alt="Логотип дизайн-студии «Nerds»">
+    <nav class="main-navigation">
+      <a class="main-logo">
+        <img src="main-logo.png" width=""  height="" alt="Логотип дизайн-студии Nerds">
       </a>
       <ul class="site-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li class="current">Магазин</li>
-        <li><a href="#">Контакты</a></li>
-    </ul>
-    <ul>
-      <li class="cart"><a href="cart.html">Корзина</a></li>
-    </ul>
-   </nav>
+        <li><a href="info.html">Студия</a></li>
+        <li><a href="clients.html">Клиенты</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="contacts.html">Контакты</a></li>
+      </ul>
+
+        <a class="cart" href="cart.html">Корзина</a>
+      </nav>
   </header>
 
   <main class="container">
+    <h1 class="page-title">Магазин готовых шаблонов</h1>
+
+    <div class="holder"
     <section class="filters">
       <h2 class="visually-hidden">Фильтр готовых шаблонов</h2>
         <!--форма-->
     </section>
+
     <section class="catalog">
       <h2 class="visually-hiidden">Список готовых шаблонов</h2>
-      <!--сортировка шаблонов-->
+
+      <section class="catalog-sorting">
+				<span>Сортировать:</span>
+				<a href="#">По цене</a>
+				<a href="#">По типу</a>
+				<a href="#">По функционалу</a>
+				<div class="sort-updown">
+					<span class="arrow-down active"></span> <!--Текстовое описание для читалок: по возростанию/убыванию?-->
+					<span class="arrow-up"></span>
+				</section>
+
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>Sedona</h3>
-            <span>Информационный сайт для туристов</span>
-            <a class="button catalog-item-price" href="#">9 990 руб.</a>
-            <p>
-              <a href="catalog-item-sedona.html">
-                <img src="img-sedona.jpg" width="" height="" alt="Дизайн информационного сайта для туристов Sedona">
-             </a>
-            </p>
+            <article>
+              <img src="img-sedona.jpg" width="" height="" alt="Дизайн информационного сайта для туристов Sedona">
+              <h3><a href="#">Sedona</a></h3>
+              <p>Информационный сайт для туристов</p>
+             <a class="button catalog-item-price" href="#">9 990 руб.</a>
+            </article>
            </li>
 
         <li class="catalog-item">
-          <h3>Pink App</h3>
-          <span>Продуктовый лендинг приложения для iOS и Android</span>
-          <a class="button catalog-item-price" href="#">9 990 руб.</a>
-          <p>
-            <a href="catalog-item-pinkapp">
-               <img src="img-pink.jpg" width="" height="" alt="Дизайн продуктового лендинга Pink App">
-            </a>
-           </p>
+          <article>
+            <img src="img-pink.jpg" width="" height="" alt="Дизайн продуктового лендинга Pink App">
+            <h3><a>Pink App</a></h3>
+            <p>Продуктовый лендинг приложения для iOS и Android</p>
+            <a class="button catalog-item-price" href="#">9 990 руб.</a>
+          </article>
+        </li>
+
+       <li class="catalog-item">
+         <article>
+           <img src="img-borodinski.jpg" width="" height="" alt="Дизайн барбершопа Бородинский">
+           <h3><a>Barbershop</a></h3>
+           <p>Сайт салоны красоты.Для мужчин, да.</p>
+           <a class="button catalog-item-price" href="#">9 990 руб.</a>
+         </article>
        </li>
 
        <li class="catalog-item">
-         <h3>Barbershop</h3>
-         <span>Сайт салоны красоты.Для мужчин, да.</span>
-         <a class="button catalog-item-price" href="#">9 990 руб.</a>
-         <p>
-           <a href="catalog-item-borodinski.html">
-               <img src="img-borodinski.jpg" width="" height="" alt="Дизайн барбершопа Бородинский">
-          </a>
-        </p>
+         <article>
+           <img src="img-mishka.jpg" width="" height="" alt="Дизайн интернет-магазин MISHKA">
+           <h3><a>MISHKA</a></h3>
+           <p>Интернет-магазин вязаных игрушек</p>
+           <a class="button catalog-item-price" href="#">9 990 руб.</a>
+         </article>
        </li>
 
        <li class="catalog-item">
-          <h3>MISHKA</h3>
-          <span>Интернет-магазин вязаных игрушек</span>
-          <a class="button catalog-item-price" href="#">9 990 руб.</a>
-          <p class="catalog-item-image">
-            <a href="catalog-item-mishka.html">
-               <img src="img-mishka.jpg" width="" height="" alt="Дизайн интернет-магазин MISHKA">
-            </a>
-           </p>
+         <article>
+           <img src="img-aplus.jpg" width="" height="" alt="Дизайн лендинга A Plus">
+           <h3><a>A Plus</a></h3>
+           <p>Лендинг курсов повышения квалификации</p>
+           <a class="button catalog-item-price" href="#">9 990 руб.</a>
+         </article>
        </li>
 
        <li class="catalog-item">
-          <h3>A Plus</h3>
-          <span>Лендинг курсов повышения квалификации</span>
-          <a class="button catalog-item-price" href="#">9 990 руб.</a>
-          <p>
-            <a href="catalog-item-aplus.html">
-               <img src="img-aplus.jpg" width="" height="" alt="Дизайн лендинга A Plus">
-            </a>
-           </p>
-       </li>
-
-       <li class="catalog-item">
-          <h3>КВАСТ</h3>
-          <span>Промо-сайт производителя крафтового кваса</span>
-          <a class="button catalog-item-price" href="#">9 990 руб.</a>
-          <p>
-            <a href="catalog-item-kvast.html">
-              <img src="img-kvast.jpg" width="" height="" alt="Дизайн промо-сайта КВАСТ">
-            </a>
-           </p>
+         <article>
+           <img src="img-kvast.jpg" width="" height="" alt="Дизайн промо-сайта КВАСТ">
+           <h3><a>КВАСТ</a></h3>
+           <p>Промо-сайт производителя крафтового кваса</p>
+           <a class="button catalog-item-price" href="#">9 990 руб.</a>
+         </article>
        </li>
      </ul>
-     <ul class="pagination-list">
-       <li class="pagination-item pagination-item-current"><a href="#">1</a></li>
-       <li class="pagination-item"><a>2</a></li>
-       <li class="pagination-item"><a href="#">3</a></li>
-       <li class="pagination-item"><a href="#">Следующая</a></li>
-     </ul>
+    </section>
+  </div>
+
+
+     <nav class="pagination-list">
+       <a class="pagination-item pagination-item-current" href="#">1</a>
+       <a class="pagination-item" href="#">2</a>
+       <a class="pagination-item" href="#">3</a>
+       <a class="pagination-item" href="#">Следующая</a>
+     </nav>
     </main>
 
     <footer class="main-footer">
+
+      <div>
+      <img class="map-image" src="img/map-with-marker.jpg" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8 ">
+      <!--что-то для карты-->
+      </div>
+
       <section class="contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
-        <!--что-то для карты-->
-        <img class="map-image" src="img/map-with-marker.jpg" alt="Карта офиса по адресу ул. Б. Конюшенная, д. 19/8 ">
-        <p class="footer-contacts">
+          <p class="footer-contacts">
           <b>NЁRDS DESIGN STUDIO</b>
             191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
             тел. +7 (812) 275-75-75
           </p>
           <button class="button" type="button">Напишите нам</button>
-        </section>
-
-        <section class="contact-us">
-          <h2>Напишите нам</h2>
-          <!--Попробовала сделать форму-->
-          <form class="contact-form" id="contact-form" method="post">
-            <p class="contact-item">
-                <label for="contact-name">Ваше имя:</label>
-                <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-            </p>
-            <p class="contact-item">
-                <label for="contact-e-mail">Ваш e-mail:</label>
-                <input id="contact-e-mail" type="text" name="e-mail" value="" placeholder="email@example.com">
-            </p>
-            <p class="contact-item">
-              <label for="contact-message">Текст письма:</label>
-              <textarea form="contact-form" id="contact-message" name="textarea" rows="3">В свободной форме</textarea>
-            </p>
-            <button class="button" type="submit">Отправить</button>
-          </form>
         </section>
 
         <section class="footer-social">
@@ -152,5 +140,23 @@
           <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
       </footer>
+
+      <h2>Напишите нам</h2>
+      <form class="contact-form" id="contact-form" method="post">
+        <p class="contact-item">
+            <label for="contact-name">Ваше имя:</label>
+            <input id="contact-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="contact-item">
+            <label for="contact-e-mail">Ваш e-mail:</label>
+            <input id="contact-e-mail" type="email" name="e-mail" value="" placeholder="email@example.com">
+        </p>
+        <p class="contact-item">
+          <label for="contact-message">Текст письма:</label>
+          <textarea form="contact-form" id="contact-message" name="textarea" rows="3">В свободной форме</textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+
      </body>
     </html>
