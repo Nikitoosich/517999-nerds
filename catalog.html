@@ -26,7 +26,65 @@
   <main class="container">
     <h1 class="page-title">Магазин готовых шаблонов</h1>
 
-      <!--форма-->
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+           <fieldset class="filter-item">
+             <legend>Стоимость:</legend>
+             <!--Пока не реализовано-->
+
+             <input type="range" min="0" max="1500" step="1" value="">
+
+             <div class="price-contols">
+               <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+               <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                  <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="adaptive" id="filter-adaptive"
+                          checked>
+                      <label for="filter-adaptive">Адаптивная</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="fixed" id="filter-fixed">
+                      <label for="filter-fixed">Фиксированная</label>
+                  </li>
+                  <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="reflowable" id="filter-reflowable"
+                          checked>
+                      <label for="filter-reflowable">Резиновая</label>
+                  </li>
+                </ul>
+          </fieldset>
+          <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                  <li class="filter-feature">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature" value="slider" id="filter-slider" checked>
+                      <label for="filter-slider">Слайдер</label>
+                  </li>
+                  <li class="filter-feature">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature" value="features-block" id="filter-features"
+                          checked>
+                      <label for="filter-features">Блок преимуществ</label>
+                  </li>
+                  <li class="filter-feature">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature" value="news" id="filter-news" checked>
+                      <label for="filter-news">Новости</label>
+                  </li>
+                  <li class="filter-feature">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature" value="gallery" id="filter-gallery">
+                      <label for="filter-gallery">Галерея</label>
+                  </li>
+                  <li class="filter-feature">
+                      <input class="visually-hidden filter-input filter-input-radio" type="radio" name="feature" value="cart" id="filter-cart">
+                      <label for="filter-cart">Корзина</label>
+                  </li>
+              </ul>
+          </fieldset>
+          <button type="submit" class="filter-button button">Показать</button>
+      </form>
 
 
     <section class="catalog">
