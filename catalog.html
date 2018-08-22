@@ -18,7 +18,7 @@
       <ul class="site-navigation">
         <li><a href="#">Студия</a></li>
         <li><a href="#">Клиенты</a></li>
-        <li><a class="current">Магазин</a></li>
+        <li><a class="active">Магазин</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
 
@@ -39,14 +39,14 @@
                  <div class="toggle max-toggle"></div>
                </div>
                <div class="price-controls">
-                от <input class="min-price" type="text" value="0">
-                до <input class="max-price" type="text" value="15 000">
+                <span>от</span> <input class="min-price" type="text" value="0">
+                <span>до</span> <input class="max-price" type="text" value="15 000">
             </div>
         </div>
           </fieldset>
           <fieldset>
               <legend>Сетка:</legend>
-              <ul>
+              <ul class="filter-options">
                   <li class="filter-option">
                       <input class="visually-hidden filter-input filter-input-checkbox" type="radio" name="feature" value="filter-adaptive" id="filter-adaptive">
                       <label for="filter-adaptive">Адаптивная</label>
@@ -63,7 +63,7 @@
           </fieldset>
           <fieldset>
               <legend>Особенности:</legend>
-              <ul>
+              <ul class="filter-features">
                   <li class="filter-feature">
                       <input class="visually-hidden filter-input filter-input-radio" type="checkbox" name="slider" value="slider" id="filter-slider">
                       <label for="filter-slider">Слайдер</label>
@@ -86,13 +86,13 @@
                   </li>
               </ul>
           </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
+          <button class="button filter-button" type="submit" class="filter-button button">Показать</button>
       </form>
 
 
       <div class="catalog-sorting">
 				<span>Сортировать:</span>
-				<a href="#">По цене</a>
+				<a class="active-sorting" href="#">По цене</a>
 				<a href="#">По типу</a>
 				<a href="#">По функционалу</a>
 				<div class="sort-updown">
@@ -102,55 +102,55 @@
       </div>
 
         <ul class="catalog-list">
-          <li class="catalog-item">
-            <article>
+          <li>
+            <article class="catalog-item">
               <img src="img/img-sedona.jpg" width="360" height="576" alt="Дизайн информационного сайта для туристов Sedona">
-              <h3><a href="#">Sedona</a></h3>
+              <h3 class="item-title"><a href="#">Sedona</a></h3>
               <p>Информационный сайт для туристов</p>
              <a class="button catalog-item-price" href="#">9 990 руб.</a>
             </article>
            </li>
 
-        <li class="catalog-item">
-          <article>
+        <li>
+          <article class="catalog-item">
             <img src="img/img-pink.jpg" width="360" height="576" alt="Дизайн продуктового лендинга Pink App">
-            <h3><a href="#">Pink App</a></h3>
+            <h3 class="item-title"><a href="#">Pink App</a></h3>
             <p>Продуктовый лендинг приложения для iOS и Android</p>
             <a class="button catalog-item-price" href="#">9 990 руб.</a>
           </article>
         </li>
 
-       <li class="catalog-item">
-         <article>
+       <li>
+         <article class="catalog-item">
            <img src="img/img-barbershop.jpg" width="360" height="576" alt="Дизайн барбершопа Бородинский">
-           <h3><a href="#">Barbershop</a></h3>
+           <h3 class="item-title"><a href="#">Barbershop</a></h3>
            <p>Сайт салоны красоты.Для мужчин, да.</p>
            <a class="button catalog-item-price" href="#">9 990 руб.</a>
          </article>
        </li>
 
-       <li class="catalog-item">
-         <article>
+       <li>
+         <article class="catalog-item">
            <img src="img/img-mishka.jpg" width="360" height="576" alt="Дизайн интернет-магазин MISHKA">
-           <h3><a href="#">MISHKA</a></h3>
+           <h3 class="item-title"><a href="#">MISHKA</a></h3>
            <p>Интернет-магазин вязаных игрушек</p>
            <a class="button catalog-item-price" href="#">9 990 руб.</a>
          </article>
        </li>
 
-       <li class="catalog-item">
-         <article>
+       <li>
+         <article class="catalog-item">
            <img src="img/img-aplus.jpg" width="360" height="576" alt="Дизайн лендинга A Plus">
-           <h3><a href="#">A Plus</a></h3>
+           <h3 class="item-title"><a href="#">A Plus</a></h3>
            <p>Лендинг курсов повышения квалификации</p>
            <a class="button catalog-item-price" href="#">9 990 руб.</a>
          </article>
        </li>
 
-       <li class="catalog-item">
-         <article>
+       <li>
+         <article class="catalog-item">
            <img src="img/img-kvast.jpg" width="360" height="576" alt="Дизайн промо-сайта КВАСТ">
-           <h3><a href="#">КВАСТ</a></h3>
+           <h3 class="item-title"><a href="#">КВАСТ</a></h3>
            <p>Промо-сайт производителя крафтового кваса</p>
            <a class="button catalog-item-price" href="#">9 990 руб.</a>
          </article>
@@ -179,10 +179,10 @@
       </div>
 
         <div class="footer-social">
-            <ul>
-              <li><a class="social-button" href="#">Вконтакте</a></li>
-              <li><a class="social-button" href="#">Фейсбук</a></li>
-              <li><a class="social-button" href="#">Инстаграм</a></li>
+            <ul class="social-buttons">
+              <li><a class="button social-button" href="#">Вконтакте</a></li>
+              <li><a class="button social-button" href="#">Фейсбук</a></li>
+              <li><a class="button social-button" href="#">Инстаграм</a></li>
            </ul>
            <b>Давайте дружить!</b>
           <p>Скидка 10% для друзей из социальных сетей.</p>
