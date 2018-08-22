@@ -1,0 +1,93 @@
+/*В zeplin размер шрифта элементов другой. Так дожно быть?*/
+
+/*У некоторых элементов напр. у кнопок есть прозрачность текста. Как правильно ее реализвать? Я пока задала цвет текста через rgba c прозрачностью. */
+
+/*Встречается кернинг metrics. Oтображается ли он как-то в CSS?*/
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation {
+  background-color: #eeeeee;
+}
+
+.main-navigation a {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+a.current {
+  outline-color: #fb565a;
+
+}
+
+.site-navigstion {
+  list-style: none;
+}
+
+.main-slider {
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+}
+
+.button:hover,
+.button:focus {
+   background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+}
