@@ -1,8 +1,5 @@
-/*В zeplin размер шрифта элементов другой. Так дожно быть?*/
 
-/*У некоторых элементов напр. у кнопок есть прозрачность текста. Как правильно ее реализвать? Я пока задала цвет текста через rgba c прозрачностью. */
 
-/*Встречается кернинг metrics. Oтображается ли он как-то в CSS?*/
 
 body {
   margin: 0;
@@ -21,11 +18,9 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  background-color: #eeeeee;
-}
+/*---Шапка---*/
 
-.main-navigation {
+.main-header {
   background-color: #eeeeee;
 }
 
@@ -34,6 +29,7 @@ a {
   line-height: 30px;
   font-weight: 500;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .main-navigation a:hover,
@@ -45,15 +41,17 @@ a {
   color: rgba(0, 0, 0, 0.3);
 }
 
-a.current {
+.active {
   outline-color: #fb565a;
 
 }
 
-.site-navigstion {
+.site-navigation {
   list-style: none;
 }
+/*---Шапка---*/
 
+/*---Слайдер---*/
 .main-slider {
   background-color: #eeeeee;
 }
@@ -68,8 +66,12 @@ a.current {
   font-weight: 500;
   color: #000000;
 }
+/*---Слайдер---*/
+
+/*---Кнопки---*/
 
 .button {
+  font: inherit;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -79,6 +81,7 @@ a.current {
   text-decoration: none;
 
   background-color: #fb565a;
+  border: none;
 }
 
 .button:hover,
@@ -90,4 +93,395 @@ a.current {
   color: rgba(255, 255, 255, 0.3);
 
   background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
 }
+/*---Кнопки---*/
+
+/*---Услуги---*/
+
+.services-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button-app {
+  background-color: #00ca74;
+}
+
+.button-app:hover,
+.button-app:focus {
+  background-color: #00bc6c;
+}
+
+.button-app:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  }
+
+  .button-presentation {
+    background-color: #efc84a;
+  }
+
+  .button-presentation:hover,
+  .button-presentation:focus {
+    background-color: #eab534;
+  }
+
+.button-presentation:active {
+  color:  rgba(255, 255, 255, 0.3);
+
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+/*---Услуги---*/
+
+/*---О нас---*/
+
+.about b {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+
+/*тире возле элемнтов списка: через list-style или как-то по-другому*/
+
+.features b {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-table caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-first td {
+  font-size: 45px;
+  line-height: 11px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.clients-list {
+  list-style: none;
+}
+/*О нас*/
+
+/*---Подвал---*/
+.find-us {
+  background-color: #ffffff;
+}
+
+
+.contacts p { /*Они не серые */
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+.name b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-social p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #444444;
+}
+
+.social-buttons {
+  list-style: none;
+}
+
+.contact-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/*---Подвал---*/
+
+/*---Форма---*/
+
+.contact-form {
+  background-color: #ffffff;
+}
+
+.contact-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contact-form input {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+
+  outline: 2px solid #d7dcde;
+}
+
+.contact-form input:hover {
+  outline: 2px solid #b4b9bb;
+}
+
+.contact-form input:focus {
+  color: #000000;
+
+  outline: 2px solid #000000;
+}
+
+.contact-form input:invalid {
+  color: #e74246;
+
+  outline: 2px solid #e74246;
+}
+
+.contact-form textarea {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #444444;
+
+  outline: 2px solid #d7dcde;
+}
+
+.contact-form textarea:hover {
+  outline: 2px solid #b4b9bb;
+}
+
+.contact-form textarea:focus {
+  color: #000000;
+
+  outline: 2px solid #000000;
+}
+
+.contact-form textarea:invalid {
+  color: #e74246;
+
+  outline: 2px solid #e74246;
+}
+/*---Форма---*/
+
+/*Каталог*/
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+
+/*---Фильтр---*/
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-controls span {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #283136;
+  text-align: center;
+
+  border: none;
+  background-color: #eeeeee;
+}
+
+.filter-options,
+.filter-features {
+  list-style: none;
+}
+
+.filter-option label,
+.filter-features label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
+
+.filter-option label:hover, /*Состояние фокуса тоже должно быть? Для доступности)*/
+.filter-option label:focus,
+.filter-features label:hover,
+.filter-features label:focus {
+  color: #000000;
+}
+
+/*--Или правильнее раздельно свойства расписать?--*/
+/*
+.filter-features {
+  list-style: none;
+}
+
+.filter-features label {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #283136;
+}
+
+.filter-features label:hover,
+.filter-features label:focus {
+  color: #000000;
+}*/
+
+.filter-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+/*---Фильтр---*/
+
+/*---Сортировка---*/
+
+.catalog-sorting span {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-sorting a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.catalog-sorting a:hover,
+.catalog-sorting a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sorting a:active,
+.active-sorting {
+  color: #000000;
+}
+/*---Сортировка---*/
+
+/*---Каталог---*/
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #eeeeee;
+}
+
+.item-title a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-item p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #666666;
+}
+
+/*---Каталог---*/
+
+/*---Пагинация---*/
+
+.pagination-list a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background-color: #dfdfdf
+}
+
+.pagination-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+
+.pagination-item-current {
+
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
+}
+/*---Пагинация---*/
