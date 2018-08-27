@@ -12,8 +12,7 @@
 
 <body>
   <header class="main-header">
-    <nav class="main-navigation" aria-label="Навигация по сайту"> <!--Подойдет ли чтобы как-то озаглавить навигацию?-->
-      <a class="main-logo">
+    <nav class="main-navigation" aria-label="Навигация по сайту">
         <img src="img/main-logo.svg" width="160"  height="65" alt="Логотип дизайн-студии Nerds">
       </a>
       <ul class="site-navigation">
@@ -27,41 +26,41 @@
       </nav>
    </header>
 
+   <section class="slider">
+      <h2 class="visually-hidden">Наши преимущества</h2>
+       <ul class="slider-controls">
+         <li><a class="active-slide" href="#slide-1"><span class="visually-hidden">Слайд 1</span></a></li>
+         <li><a href="#slide-2"><span class="visually-hidden">Слайд 2</span></a></li>
+         <li><a href="#slide-3"><span class="visually-hidden">Слайд 3</span></a></li>
+       </ul>
+
+         <ul class="slider-list">
+           <li>
+             <section class="slider-item" id="slide-1">
+               <b>Долго, дорого, <br> скрупулезно.</b>
+               <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
+               <a class="slider-item-button button" href="#">Узнать больше</a>
+             </section>
+           </li>
+           <li>
+             <section class="slider-item" id="slide-2">
+               <b>Любим математику как никто другой</b>
+               <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+               <a class="slider-item-button button" href="#">Узнать больше</a>
+             </section>
+           </li>
+           <li>
+             <section class="slider-item" id="slide-3">
+               <b>Только ночь, <br> только хардкор</b>
+               <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
+               <a class="slider-item-button button" href="#">Узнать больше</a>
+            </section>
+           </li>
+         </ul>
+     </section>
+
   <main class="container">
     <h1 class="visually-hidden"> Дизайн-студия «Nerds»</h1>
-
-    <div class="main-slider">
-
-      <ul class="main-slider-controls">
-        <li><a class="active" href="#slide-1"><span class="visually-hidden">Слайд 1</span></a></li>
-        <li><a href="#slide-2"><span class="visually-hidden">Слайд 2</span></a></li>
-        <li><a href="#slide-3"><span class="visually-hidden">Слайд 3</span></a></li>
-      </ul>
-
-        <ul class="slider-list">
-          <li>
-            <section class="slider-item" id="slide-1">
-              <b>Долго, дорого, <br> скрупулезно.</b>
-              <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
-            </section>
-          </li>
-          <li>
-            <section class="slider-item" id="slide-2">
-              <b>Любим математику как никто другой</b>
-              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
-            </section>
-          </li>
-          <li>
-            <section class="slider-item" id="slide-3">
-              <b>Только ночь, <br> только хардкор</b>
-              <p>Работать днем, как все? Мы против этого. <br> Ближе к полуночи работа только начинается.</p>
-              <a class="slider-item-button button" href="#">Узнать больше</a>
-           </section>
-          </li>
-        </ul>
-    </div>
 
     <section class="services">
       <h2 class="visually-hidden">Услуги</h2>
@@ -77,14 +76,14 @@
           <section class="service-item">
             <h3>Приложения</h3>
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="button button-app" href="#">Заказать</a>
+            <a class="button button-green" href="#">Заказать</a>
           </section>
         </li>
         <li>
           <section class="service-item">
             <h3>Презентации</h3>
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="button button-presentation" href="#">Заказать</a>
+            <a class="button button-yellow" href="#">Заказать</a>
           </section>
         </li>
       </ul>
@@ -92,10 +91,12 @@
 
     <section class="about">
        <h2 class="visually-hidden">О нас</h2>
-       <b>Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
-       <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+       <div class="column-left">
+       <div class="about-info">
+         <b class="about-lead">Мы — маленькая, но гордая дизайн-студия из Краснодара. </b>
+         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
  превыше креатива. Работаем не покладая рук, как роботы.</p>
-
+       </div>
        <div class="features">
          <b> Выполняем заказы на разработку:</b>
          <ul>
@@ -104,13 +105,14 @@
            <li>Слайдшоу и видео для корпоративных презентаций</li>
          </ul>
       </div>
+      </div>
 
       <div class="advantages">
         <img class="about-logo" src="img/nerds-illustration-logo.png" width="360" height="208" alt="Дизайн-студия Nerds">
 
          <table class="advantages-table">
            <caption>C 2004 года любим точность во всем:</caption>
-            <tr class="advantages-first">
+            <tr class="advantages-percents">
               <td>146<sup>%</sup></td>
               <td>100<sup>%</sup></td>
               <td>50<sup>%</sup></td>
@@ -123,7 +125,7 @@
      </div>
    </section>
 
-   <section class="refers">
+   <section class="clients">
      <h2 class="visually-hidden">Наши клиенты</h2>
      <ul class="clients-list">
        <li><a href="#"><img src="img/htmlacademy.png" width="199" height="68" alt="HTML Academy"></a></li>
@@ -147,15 +149,19 @@
     </section>
   </div>
 
+    <div class="container">
     <div class="footer-social">
         <ul class="social-buttons">
           <li><a class="social-button vk" href="#">Вконтакте</a></li>
           <li><a class="social-button fb" href="#">Фейсбук</a></li>
           <li><a class="social-button insta" href="#">Инстаграм</a></li>
        </ul>
-       <b>Давайте дружить!</b>
+     </div>
+       <div class="footer-promo">
+       <b>Давайте дружить, это выгодно!</b>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
+   </div>
   </footer>
 
 <section class="contact-us">
