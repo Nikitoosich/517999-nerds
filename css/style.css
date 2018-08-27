@@ -1,0 +1,854 @@
+body {
+  margin: 0;
+
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283136;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*---Шапка---*/
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.main-navigation a {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #fb565a;
+}
+
+.main-navigation a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation .active {
+  border-bottom: 2px solid #fb565a;
+}
+
+/*---Шапка---*/
+
+/*---Слайдер---*/
+.slider {
+  background-color: #eeeeee;
+}
+
+.slider-list {
+  list-style: none;
+}
+
+.slider-item b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+}
+/*---Слайдер---*/
+
+/*---Кнопки---*/
+
+.button {
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border: none;
+  border-radius: 5px;
+}
+
+.button:hover,
+.button:focus {
+   background-color: #e74246;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #d7373b;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+/*---Кнопки---*/
+
+/*---Услуги---*/
+
+.services-list {
+  list-style: none;
+}
+
+.service-item h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.button-green {
+  background-color: #00ca74;
+}
+
+.button-green:hover,
+.button-green:focus {
+  background-color: #00bc6c;
+}
+
+.button-green:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: #00aa62;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+.button-yellow {
+  background-color: #efc84a;
+}
+
+.button-yellow:hover,
+.button-yellow:focus {
+  background-color: #eab534;
+}
+
+.button-yellow:active {
+  color:  rgba(255, 255, 255, 0.3);
+
+  background-color: #e5a722;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+/*---Услуги---*/
+
+/*---О нас---*/
+
+.about-lead {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+
+/*тире возле элемнтов списка: через list-style или как-то по-другому*/
+
+.features b {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-table caption {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-percents td {
+  font-size: 45px;
+  line-height: 11px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.clients-list {
+  list-style: none;
+}
+/*О нас*/
+
+/*---Подвал---*/
+.find-us {
+  background-color: #ffffff;
+}
+
+
+.contacts p { /*Они не серые */
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+}
+
+.name b {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-promo b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.footer-promo p {
+  font-size: 16px;
+  line-height: 22px;
+  color: #444444;
+}
+
+.social-buttons {
+  list-style: none;
+}
+
+.contact-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/*---Подвал---*/
+
+/*---Форма---*/
+
+.contact-form {
+  background-color: #ffffff;
+}
+
+.contact-form label {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.contact-form input {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  outline: 2px solid #d7dcde;
+}
+
+.contact-form input:hover {
+  outline: 2px solid #b4b9bb;
+}
+
+.contact-form input:focus {
+  color: #000000;
+
+  outline: 2px solid #000000;
+}
+
+.contact-form input:invalid {
+  color: #e74246;
+
+  outline: 2px solid #e74246;
+}
+
+.contact-form textarea {
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+
+  outline: 2px solid #d7dcde;
+}
+
+.contact-form textarea:hover {
+  outline: 2px solid #b4b9bb;
+}
+
+.contact-form textarea:focus {
+  color: #000000;
+
+  outline: 2px solid #000000;
+}
+
+.contact-form textarea:invalid {
+  color: #e74246;
+
+  outline: 2px solid #e74246;
+}
+/*---Форма---*/
+
+/*Каталог*/
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+/*---Фильтр---*/
+
+.filter fieldset {
+  border: none;
+}
+
+.filter legend {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.price-controls span {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-transform: uppercase;
+}
+
+.price-controls input {
+  font-size: 16px;
+  line-height: 22px;
+  color: #283136;
+  text-align: center;
+
+  border: none;
+  background-color: #eeeeee;
+}
+
+.filter-options,
+.filter-features {
+  list-style: none;
+}
+
+.filter-option label,
+.filter-features label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-option label:hover, /*Состояние фокуса тоже должно быть? Для доступности)*/
+.filter-option label:focus,
+.filter-features label:hover,
+.filter-features label:focus {
+  color: #000000;
+}
+
+/*--Или правильнее раздельно свойства расписать?--*/
+/*
+.filter-features {
+  list-style: none;
+}
+
+.filter-features label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+
+.filter-features label:hover,
+.filter-features label:focus {
+  color: #000000;
+}*/
+
+.filter-button {
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: #dfdfdf;
+}
+
+.filter-button:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  background-color: #d5d5d5;
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+}
+
+/*---Фильтр---*/
+
+/*---Сортировка---*/
+
+.catalog-sorting span {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-sorting a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+}
+
+.catalog-sorting a:hover,
+.catalog-sorting a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.catalog-sorting a:active,
+.active {
+  color: #000000;
+}
+/*---Сортировка---*/
+
+/*---Каталог---*/
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  background-color: #eeeeee;
+}
+
+.item-title a {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.item-title {
+  text-align: center;
+}
+
+.catalog-item p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  text-align: center;
+}
+
+/*---Каталог---*/
+
+/*---Пагинация---*/
+
+.pagination-item {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+
+  background-color: #eeeeee;
+}
+
+.pagination-list a:hover,
+.pagination-list a:focus {
+  background-color: #dfdfdf
+}
+
+.pagination-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
+  background-color: #d5d5d5;
+}
+
+
+.pagination-item-current {
+
+  background-color: #ffffff;
+  border: solid 3px #dbdbdb;
+}
+/*---Пагинация---*/
+
+
+/*--Скрытые заголовки для удобства--*/
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/*--Cетка--*/
+html,
+body {
+  min-width: 1440px;
+  min-height: 2476px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  padding-top: 75px;
+}
+
+.main-logo { /*Нужна какая-то обертка для лого чтобы оно стало на место?*/
+  width: 160px;
+  height: 65px;
+
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 540px;
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation a,
+.user-navigation a {
+  display: block;
+  margin-right: 45px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+
+  vertical-align: middle;
+}
+
+.cart {
+  width: 160px;
+}
+
+.slider {
+  padding: 25px;
+}
+
+.slider-controls {
+  list-style: none;
+}
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-item-button {
+  display: block;
+  width: 240px;
+  padding: 15px 0;
+}
+
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.services {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-around;
+
+  margin: 0;
+  padding: 80px 0;
+}
+
+.services-item {
+  width: 300px;
+}
+
+.services-item h3 {
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.services-item p {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.service-item .button {
+  display: block;
+
+  width: 160px;
+  padding: 15px 0;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 75px;
+  padding-bottom: 73px;
+
+  border-bottom: 2px solid #eeeeee;
+}
+
+.column-left {
+  width: 680px;
+}
+
+.advantages {
+  width: 380px;
+}
+
+.advantages-table caption {
+  margin-bottom: 25px;
+  padding: 0;
+}
+
+.clients {
+  border-bottom: 2px solid #eeeeee;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*--Выровнять изображения--*/
+
+.main-footer {
+  margin-top: 80px;
+}
+
+.main-footer .container {
+  display: flex;
+
+}
+
+.find-us img {
+  width: 100%;
+  margin-bottom: 70px;
+}
+
+.contacts button {
+  display: block;
+
+  width: 220px;
+  padding: 15px 0;
+}
+
+.social-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin: 0;
+  margin-right: 140px;
+  padding: 0;
+
+  width: 260px;
+}
+
+.footer-promo b {
+  width: 280px;
+}
+
+.contact-form button {
+  display: block;
+
+  width: 260px;
+  padding: 15px 0;
+}
+
+
+/*--Каталог--*/
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+  padding-bottom: 110px;
+}
+
+.filter {
+  width: 260px;
+}
+
+.filter-item {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 55px;
+}
+
+.range-filter {
+  width: 240px;
+}
+
+.range-controls {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: #d7dcde;
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: #00ca74;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  cursor: pointer;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  background: #ababab;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+
+.range-controls .toggle-min {
+  left: 50px;
+}
+
+.range-controls .toggle-max {
+  left: 110px;
+}
+
+.price-controls {
+  font-size: 0;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+}
+
+.max-price {
+  text-align: right;
+}
+
+.price-controls input {
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 60px;
+  margin-left: 10px;
+  padding: 8px 10px;
+  text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.filter-item legend {
+  margin-bottom: 50px;
+}
+
+
+.inner-container .columns {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 55px;
+
+}
+
+.filter-button {
+  display: block;
+
+  width: 260px;
+  padding: 15px 0;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: space-between;
+
+  padding-top: 55px;
+  padding-bottom: 60px;
+}
+
+.catalog {
+  width: 760px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin:0;
+  padding: 0;
+  padding-bottom: 60px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalog-item img {
+  width: 360px;
+  height: 576px;
+}
+
+
+.catalog-item {
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 32px;
+
+}
+
+.catalog-item img {
+  width: 360px;
+  height: 576px;
+}
+
+.catalog-item-price {
+  display: block;
+
+  width: 200px;
+  padding: 15px 0;
+}
+
+.pagination-list {
+  padding: 0;
+  margin: 0;
+}
+
+.pagination-item {
+  padding: 15px 20px;
+}
