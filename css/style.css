@@ -6,6 +6,7 @@ body {
 
 body {
   margin: 0;
+  padding: 0;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -47,6 +48,8 @@ input[type="radio"].visually-hidden {
 /*---Шапка---*/
 
 .main-header {
+  width: 100%; /*---*/
+
   background-color: #eeeeee;
 }
 
@@ -55,11 +58,11 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   align-items: center;
 
-  width: 100%;
-  padding-top: 50px;
+  padding-top: 49px;/*---*/
 }
 
 .main-logo {
+  margin-right: auto;/*---*/
   width: 160px;
   height: 65px;
 }
@@ -95,9 +98,10 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
   flex-wrap: wrap;
 
-  width: 540px;
+  width: 440px; /*---*/
   margin: 0;
   padding: 0;
+  padding-top: 18px; /*---*/
 
   list-style: none;
 }
@@ -106,9 +110,9 @@ input[type="radio"].visually-hidden {
   border-bottom: 2px solid #fb565a;
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation a {
   display: block;
+  padding: 6px 0;
 
   vertical-align: middle;
 }
@@ -116,16 +120,20 @@ input[type="radio"].visually-hidden {
 .cart {
   position: relative;
 
-  padding-left: 25px;
+  margin: 0;
+  margin-left: auto;/*---*/
+  padding-top: 21px;/*---*/
   width: 160px;
+
+  text-align: right;/*---*/
 }
 
 .cart::before {
   content: "";
 
   position: absolute;
-   top: 7px;
-  left: -10px;
+   top: 26px; /*---*/
+  left: 45px; /*---*/
 
   width: 16px;
   height: 18px;
@@ -141,7 +149,6 @@ input[type="radio"].visually-hidden {
 
 .slider {
   position: relative;
-  min-height: 414px;
 
   background-color: #eeeeee;
 }
@@ -224,7 +231,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(1) {
   background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
-  background-position: 93% 18px;
+  background-position: 99%  0; /*---*/
 }
 
 .slider-item:nth-child(2) {
@@ -236,7 +243,7 @@ input[type="radio"].visually-hidden {
 .slider-item:nth-child(3) {
   background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
-  background-position: 100% 20px;
+  background-position: 100% 0; /*---*/
 }
 
 .slider-item b {
@@ -261,7 +268,18 @@ input[type="radio"].visually-hidden {
 .slider-item-button {
   display: block;
   width: 240px;
-  padding: 13px 0;
+  padding: 16px 0;
+
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #fb565a;
+  border-radius: 3px;
+  border: none;
 }
 
 /*---Слайдер---*/
@@ -310,12 +328,14 @@ input[type="radio"].visually-hidden {
 /*---Услуги---*/
 
 .services {
+   padding-right: 60px; /*---*/
+
   border-bottom: 2px solid #eeeeee;
 }
 
 .services-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;/*---*/
 
   margin: 0;
   padding: 80px 0;
@@ -327,9 +347,35 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
+/*---*/
+.service-item {
+  padding-top: 170px;
+
+}
+
+.service-item-web {
+  background-image: url("../img/illustration-1.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.service-item-app {
+  background-image: url("../img/illustration-2.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+.service-item-presentation {
+  background-image: url("../img/illustration-3.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+/*---*/
+
 .service-item h3 {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 15px; /*---*/
   padding: 0;
 
   font-size: 24px;
@@ -339,10 +385,14 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.services-item p {
+.service-item p {
+  display: block; /*---*/
+  max-width: 260px;
+
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 35px; /*---*/
+ /*---*/
 }
 
 .service-item .button {
@@ -393,21 +443,21 @@ input[type="radio"].visually-hidden {
   justify-content: space-between;
 
   padding-top: 40px;
-  padding-bottom: 70px;
+  padding-bottom: 50px; /*---*/
 
   border-bottom: 2px solid #eeeeee;
 }
 
 .column-left {
-  width: 680px;
+  width: 660px;  /*---*/
 
-  margin-top: 40px;
+  margin-top: 35px; /*---*/
 }
 
 .about-lead {
   display: inline-block;
 
-  margin-bottom: 30px;
+  margin-bottom: 17px; /*---*/
 
   font-size: 45px;
   line-height: 45px;
@@ -417,7 +467,7 @@ input[type="radio"].visually-hidden {
 
 .about-info p {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 40px; /*---*/
 }
 
 .features-list {
@@ -437,12 +487,12 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages {
-  width: 380px;
+  width: 360px; /*---*/
 }
 
 .advantages-table caption {
   margin-bottom: 25px;
-  padding: 20px 0;
+  padding: 30px 0; /*---*/
 
   font-size: 16px;
   line-height: 24px;
@@ -452,8 +502,12 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-percents td {
+  /*---*/
+  margin: 0;
+  padding: 0;
   padding-bottom: 30px;
-  padding-right: 20px;
+  /*padding-right: 20px;*/
+  /*---*/
 
   font-size: 45px;
   line-height: 11px;
@@ -480,7 +534,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 
   margin: 0;
-  padding: 55px 31px 45px 43px;
+  padding: 46px 31px 45px 43px; /*---*/
 
   list-style: none;
 
@@ -607,71 +661,128 @@ input[type="radio"].visually-hidden {
 /*---Подвал---*/
 
 /*---Форма---*/
+.contact-us {
+  display: none;
+	position: absolute;/*или через fixed?*/
+	top: 0;
+	left: 50%;
+	width: 960px;
+  margin-top: -38px;
+	margin-left: -315px;
+	padding: 68px 100px 85px 100px;
+
+	color: #000000;
+	background-color: #ffffff;
+	box-shadow: 20px 40px 0 rgba(0, 1, 1, 0.75); /*Тень из zeplin*/
+}
+
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.form-close {
+  position: absolute;
+  /*Спозиционировать*/
+
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+  background-color: lightblue;
+  border: 0;
+  background-image: url("../img/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  cursor: pointer;
+}
 
 .contact-us h2 {
+  margin: 0;
+  margin-bottom: 40px;
+
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   color: #000000;
 }
 
-.contact-form {
-  background-color: #ffffff;
+.contact-item {
+  margin: 0;
+  margin-bottom: 30px;
 }
 
-.contact-form label {
+.contact-item label {
+  display: block;
+  margin-bottom: 10px;
+
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
   color: #000000;
 }
 
-.contact-form input {
+.contact-item input {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 8px 15px;
+  padding-right: 15px; /*---------------*/
+
   font-size: 16px;
   line-height: 18px;
   color: #444444;
 
-  outline: 2px solid #d7dcde;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
 }
 
+
 .contact-form input:hover {
-  outline: 2px solid #b4b9bb;
+  border: 2px solid #b4b9bb;
 }
 
 .contact-form input:focus {
   color: #000000;
 
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
 }
 
 .contact-form input:invalid {
   color: #e74246;
 
-  outline: 2px solid #e74246;
+  border: 2px solid #e74246;
 }
 
 .contact-form textarea {
+  box-sizing: border-box;
+
+  width: 760px;
+
   font-size: 16px;
   line-height: 18px;
   color: #444444;
 
-  outline: 2px solid #d7dcde;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+  resize: none;/*------------*/
 }
 
 .contact-form textarea:hover {
-  outline: 2px solid #b4b9bb;
+  border: 2px solid #b4b9bb;
 }
 
 .contact-form textarea:focus {
   color: #000000;
 
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
 }
 
 .contact-form textarea:invalid {
   color: #e74246;
 
-  outline: 2px solid #e74246;
+  border: 2px solid #e74246;
 }
 
 .contact-form button {
@@ -688,8 +799,8 @@ input[type="radio"].visually-hidden {
 .page-title {
   margin: 0;
   padding: 0;
-  padding-top: 90px;
-  padding-bottom: 110px;
+  padding-top: 80px; /*---*/
+  padding-bottom: 105px;/*---*/
 
   font-size: 55px;
   line-height: 55px;
@@ -704,8 +815,8 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
 
-  padding-top: 55px;
-  padding-bottom: 60px; /*--------------------------------*/
+  padding-top: 60px; /*---*/
+  padding-bottom: 60px;
 
 }
 
@@ -747,16 +858,24 @@ input[type="radio"].visually-hidden {
 
 .filter-option label,
 .filter-features label {
+   display: block;
+   margin-bottom: 10px;
+
   font-size: 16px;
   line-height: 20px;
   color: #283136;
 }
 
-.filter-option label:hover, /*Состояние фокуса тоже должно быть? Для доступности)*/
-.filter-option label:focus,
-.filter-features label:hover,
-.filter-features label:focus {
+.filter-option:hover  label, /*Состояние фокуса тоже должно быть? Для доступности)*/
+.filter-option:focus label,
+.filter-features:hover label,
+.filter-features:focus label {
   color: #000000;
+}
+
+.filter-option:disabled label,
+.filter-features:disabled label {
+  color: rgba(40, 49, 54, 0.3);
 }
 
 /*--Или правильнее раздельно свойства расписать?--*/
@@ -775,6 +894,70 @@ input[type="radio"].visually-hidden {
 .filter-features label:focus {
   color: #000000;
 }*/
+
+.filter-input-radio {
+  position: relative;
+
+  color: #283136;
+  cursor: pointer;
+}
+
+input[type="radio"] + .radio-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 25px;
+  height: 25px;
+
+  border: 3px solid #b8b8b8;
+  border-radius: 50%;
+}
+
+.filter-input-radio input[type="radio"]:hover + .radio-indicator
+.filter-input-radio input[type="radio"]:focus + .radio-indicator, {
+  border: 3px solid #283136;
+}
+
+.filter-input-radio input[type="radio"]:disabled + .radio-indicator {
+  border: 3px solid #4d4d4d;
+}
+
+
+.filter-input-checkbox {
+  position: relative;
+
+  /*padding-left: 30px;*/
+  color: #283136;
+  cursor: pointer;
+}
+
+.filter-input-checkbox:hover,
+.filter-input-checkbox:focus {
+  color: #000000;
+}
+
+.filter-input-checkbox:disabled {
+  color: color: rgba(40, 49, 54, 0.3);
+}
+
+input[type="checkbox"] + .checkbox-indicator { /*--------Галочка?----------*/
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 26px;
+}
+
+.filter-input-checkbox input[type="checkbox"]:hover + .checkbox-indicator,
+.filter-input-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+
+}
+
+.filter-input-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+
+}
 
 .filter-button {
   color: #000000;
@@ -892,6 +1075,7 @@ input[type="radio"].visually-hidden {
   padding: 15px 0;
 }
 
+
 .catalog-sorting {
   display: flex;
   margin-bottom : 50px;
@@ -950,7 +1134,8 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   width: 360px;
-  margin-bottom: 32px;
+  margin-bottom: 33px; /*---*/
+  padding-top: 40px; /*---*/
 }
 
 .catalog-item img {
