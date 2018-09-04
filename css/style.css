@@ -1,6 +1,7 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
@@ -165,6 +166,8 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-controls {
+  box-sizing: content-box;
+
   position: absolute;
   left: 50%;
   bottom: 104px;
@@ -491,7 +494,7 @@ input[type="radio"].visually-hidden {
 .features-list li {
   position: relative;
 
-  margin-bottom: 25px;
+  margin-bottom: 24px;/*---*/
   padding-left: 35px;
 }
 
@@ -539,8 +542,8 @@ background-color: #fb565a;
   /*---*/
   margin: 0;
   padding: 0;
-  padding-bottom: 30px;
-  /*padding-right: 20px;*/
+  padding-bottom: 35px;/*---*/
+  padding-right: 10px;
   /*---*/
 
   font-size: 45px;
@@ -583,7 +586,7 @@ background-color: #fb565a;
   min-height: 180px;
   outline: none;
 	vertical-align: bottom;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .clients-list li:not(:nth-child(4n))::after {
@@ -605,6 +608,7 @@ background-color: #fb565a;
   padding-top: 47px;
 
   text-align: center;
+
 }
 
 .client-item img {
@@ -628,7 +632,7 @@ background-color: #fb565a;
 /*---Подвал---*/
 
 .main-footer {
-  margin-top: 80px;
+  margin-top: 75px; /*должен быть 80*/
 }
 
 .main-footer .container {
@@ -645,21 +649,19 @@ background-color: #fb565a;
 .find-us img {
   width: 100%;
   height: 416px;
-  margin-bottom: 70px;
+  margin-bottom: 65px;
 }
 
 .contacts {
   position: absolute;
 
   top: 55px;
-  left: 140px;
+  left: 185px;
 
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-right: 60px;
-  padding-left: 50px;
-  width: 210px;
-  height: 210px;
+  padding: 50px;
+
+  width: 319px;
+  min-height: 308px;
 
   background-color: #ffffff;
 }
@@ -703,6 +705,7 @@ background-color: #fb565a;
   align-items: center;
   justify-content: center;
 
+  margin-bottom: 70px;
   width: 80px;
   height: 80px;
 
@@ -730,7 +733,7 @@ background-color: #fb565a;
 /*---Форма---*/
 .contact-us {
   box-sizing: border-box;
-  /*display: none;*/
+  display: none;
 	position: fixed;/*или через absolute?*/
 	top: 50%;
 	left: 50%;
@@ -811,7 +814,7 @@ background-color: #fb565a;
 .contact-item input {
   box-sizing: border-box;
   width: 360px;
-  padding: 8px 15px;
+  padding: 15px; /*----*/
   padding-right: 15px; /*---------------*/
 
   font-size: 16px;
@@ -842,6 +845,7 @@ background-color: #fb565a;
 .contact-form textarea {
   box-sizing: border-box;
 
+  padding: 14px;/*----*/
   width: 760px;
 
   font-size: 16px;
@@ -872,8 +876,9 @@ background-color: #fb565a;
 .contact-form button {
   display: block;
 
-  width: 260px;
+  margin-top: 5px;/*---*/
   padding: 15px 0;
+  width: 260px;
 }
 
 /*---Форма---*/
@@ -907,25 +912,26 @@ background-color: #fb565a;
 /*---Фильтр---*/
 
 .filter {
+  box-sizing: content-box;/*---*/
+
   width: 260px;
 }
 
-.filter-item {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 55px;
-}
 
 .filter fieldset {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;/*---*/
   padding: 0;
 
   border: none;
 }
 
+.filter .filter-item {
+    margin-bottom: 65px;/*---*/
+}
+
 .filter legend {
-  margin-bottom: 15px;
+  margin-bottom: 20px;/*---*/
 
   font-size: 18px;
   line-height: 18px;
@@ -944,7 +950,7 @@ background-color: #fb565a;
 
 .filter-option,
 .filter-feature {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   padding-left: 36px;
 }
 
@@ -1193,8 +1199,10 @@ background-color: #fb565a;
 /*---Сортировка---*/
 .catalog-sorting {
   display: flex;
+
   margin-bottom : 50px;
 }
+
 
 .catalog-sorting span {
   margin-right: auto;
@@ -1208,7 +1216,7 @@ background-color: #fb565a;
 
 .catalog-sorting a {
   position: relative;
-  margin-right: 25px;
+  margin-right: 30px;
 
   font-size: 14px;
   line-height: 18px;
@@ -1309,14 +1317,14 @@ background-color: #fb565a;
 
   margin:0;
   padding: 0;
-  padding-bottom: 60px;
+  margin-bottom: 35px;
 
   list-style: none;
 }
 
 .catalog-list li {
   width: 360px;
-  margin-bottom: 25px; /*---*/
+  margin-bottom: 33px; /*---*/
 
 
   box-sizing: border-box;
@@ -1361,15 +1369,19 @@ background-color: #fb565a;
 
 .catalog-item-hidden {
   position: absolute;
-  top:390px;
+  top:385px;
 
-  max-height: 231px;
-  max-width: 360px;
-  padding: 25px 60px 43px 60px;
+  height: 231px;
+  width: 360px;
+  padding-top: 7px; /*60px 43px 60px;*/
+  padding-left: 80px;
+  padding-right: 80px;
 
-  opacity: 0;
+
+  opacity: 1;
 
   background-color: #eeeeee;
+
 }
 
 .catalog-item:hover .catalog-item-hidden {
@@ -1381,7 +1393,8 @@ background-color: #fb565a;
   display: block;
 
   width: 200px;
-  margin:auto;
+
+  margin-top: 30px;
   padding: 15px 0;
 }
 
@@ -1404,6 +1417,8 @@ background-color: #fb565a;
   text-align: center;
 }
 
+
+
 /*---Каталог---*/
 
 /*---Пагинация---*/
@@ -1414,6 +1429,7 @@ background-color: #fb565a;
 }
 
 .pagination-item {
+  margin-right: 8px;
   padding: 15px 20px;
 
   font-size: 16px;
@@ -1424,6 +1440,7 @@ background-color: #fb565a;
   text-align: center;
 
   background-color: #eeeeee;
+  border-radius: 3px;
 }
 
 .pagination-list a:hover,
@@ -1440,14 +1457,23 @@ background-color: #fb565a;
 
 
 .pagination-item-current {
+  padding: 13px 18px;
 
   background-color: #ffffff;
   border: solid 3px #dbdbdb;
 }
 
 .pagination-item-next {
-  padding-left: 70px;
-  padding-right: 70px;
+  padding-left: 75px;
+  padding-right: 75px;
+
+  text-align: center;
 }
 /*---Пагинация---*/
 /*--Каталог--*/
+
+/*----Футер----*/
+.inner-footer {
+  margin-top: 10px;
+}
+/*----Футер----*/
