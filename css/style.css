@@ -1054,10 +1054,14 @@ background-color: #fb565a;
 
 .filter fieldset {
   margin: 0;
-  margin-bottom: 30px; /*--По макету можно и 40--*/
+  margin-bottom: 35px;
   padding: 0;
 
   border: none;
+}
+
+.filter fieldset:last-of-type {
+  margin-bottom: 29px;
 }
 
 .filter .filter-item {
@@ -1065,7 +1069,7 @@ background-color: #fb565a;
 }
 
 .filter legend {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 
   font-size: 18px;
   line-height: 18px;
@@ -1084,7 +1088,7 @@ background-color: #fb565a;
 
 .filter-option,
 .filter-feature {
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   padding-left: 36px;
 }
 
@@ -1121,7 +1125,7 @@ background-color: #fb565a;
   content: "";
   position: absolute;
   left: -36px;
-  top: -3px;
+  top: -4px;
 
 
   width: 27px;
@@ -1164,7 +1168,7 @@ background-color: #fb565a;
   content: "";
   position: absolute;
   left: -35px;
-  top: -4px;
+  top: -3px;
 
 
   width: 25px;
@@ -1336,7 +1340,7 @@ background-color: #fb565a;
 .catalog-sorting {
   display: flex;
 
-  margin-bottom : 50px;
+  margin-bottom : 52px;
 }
 
 
@@ -1466,7 +1470,7 @@ background-color: #fb565a;
 
   margin:0;
   padding: 0;
-  margin-bottom: 27px;/*должно быть 27*/
+  margin-bottom: 27px;
 
   list-style: none;
 }
@@ -1483,7 +1487,7 @@ background-color: #fb565a;
   position: relative;
   overflow: hidden;
 
-  padding-top: 40px; /*---*/
+  padding-top: 40px;
 
   outline: 1px solid #e5e5e5;/*--Не рамка--*/
   border-radius: 3px 3px 0 0;
