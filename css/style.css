@@ -54,7 +54,8 @@ input[type="radio"].visually-hidden {
 .button {
   display: inline-block;
 
-  padding: 15px 40px;
+  margin: 0;
+  padding: 16px 40px;
 
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -63,7 +64,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  vertical-align: middle;
+  vertical-align: top;
   text-decoration: none;
 
   background-color: #fb565a;
@@ -88,6 +89,7 @@ input[type="radio"].visually-hidden {
 /*---Шапка---*/
 
 .main-header {
+  padding-top: 49px;/*----*/
   width: 100%;
 
   background-color: #eeeeee;
@@ -97,14 +99,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-
-  padding-top: 49px;
 }
 
 .main-logo {
   margin-right: 156px;
-  width: 160px;
-  height: 65px;
+
 }
 
 .main-logo:hover,
@@ -193,141 +192,121 @@ input[type="radio"].visually-hidden {
 .slider {
   position: relative;
 
-  height: 431px;
-
   background-color: #eeeeee;
 }
 
 .slider-controls {
-  box-sizing: content-box;/*Тут не border-box*/
+  display: flex;
 
   position: absolute;
   left: 50%;
-  bottom: 104px;
-  z-index: 100;
-
-  width: 160px;
-  height: 18px;
-
-  text-align: center;
-  font-size: 0;
+  bottom: 96px;
+  /*z-index: 100;*/
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   transform: translateX(-50%);
+
+  list-style: none;
+}
+
+.slider-controls li {
+  margin-right: 9px;
+  margin-left: 9px;
 }
 
 .slider-controls a {
   position: relative;
 
-  display: inline-block;
+  display: block;
   width: 18px;
   height: 18px;
-  padding: 8px;
 
   border-radius: 50%;
   cursor: pointer;
-  vertical-align: baseline;
-}
 
-.slider-controls a::after {
-  content: "";
-
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1;
-
-  width: 18px;
-  height: 18px;
-
-  background: #ffffff;
-
-  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .slider-controls .active-slide::before {
   content: "";
 
   position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 2;
+  left: 5px;
+  top: 5px;
 
-  width: 4px;
-  height: 4px;
-  margin: -4px;
+  width: 8px;
+  height: 8px;
 
-  background-color: inherit;
   border: 2px solid #c1c1c1;
   border-radius: 50%;
 }
 
 .slider-list {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
 }
 
 .slider-item {
-  display: none;
-  padding: 78px 0 80px 0;
-}
-
-.slide-1 {
-  display: block;
+  padding-top: 72px;
+  padding-bottom: 50px;
+  min-height: 424px;
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .slide-1 {
   background-image: url("../img/slide1.png");
-  background-repeat: no-repeat;
-  background-position: 99%  0;
+  background-position: right 3px bottom 0;
 }
 
 .slide-2 {
   background-image: url("../img/slide2.png");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: right bottom;
 }
 
 .slide-3 {
   background-image: url("../img/slide3.png");
-  background-repeat: no-repeat;
-  background-position: 100% 0;
+  background-position: right bottom;
+}
+
+.slide-2,
+.slide-3 {
+  display: none;
 }
 
 .slider-item p {
-  max-width: 430px;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.slider-item p + p {
+  margin-top: 25px;
 }
 
 .slide-title {
-  display: block;
-
-  max-width: 600px;
-  margin: 0;
-  padding-bottom: 25px;
+  max-width: 520px;
 
   font-size: 55px;
   line-height: 55px;
-  font-weight: 500;
   color: #000000;
+}
+.slide-title b {
+  font-weight: 500;
+}
+
+.slide-info {
+  max-width: 415px;
 }
 
 .slider-item .button {
-  margin-top: 40px;
-  padding: 16px 54px;
-
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-align: center;
-  text-decoration: none;
-
-  background-color: #fb565a;
-  border-radius: 3px;
-  border: none;
+  margin-top: 39px;
+  padding-right: 55px;
+  padding-left: 54px;
 }
 
 /*---Слайдер---*/
@@ -354,8 +333,9 @@ input[type="radio"].visually-hidden {
   display: flex;
   flex-wrap: wrap;
 
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   padding-right: 60px;
 
   list-style: none;
@@ -365,7 +345,7 @@ input[type="radio"].visually-hidden {
   width: 300px;
 }
 
-.services-list li:not(:nth-child(3n)) { /*---Вдруг еше услуги появятся ---*//*--У тебя было :not(:last-child)-- И я припиской объясняю почему я решила поставить 3n */
+.services-list li:not(:nth-child(3n)) {
   margin-right: 100px;
 }
 
@@ -405,11 +385,10 @@ input[type="radio"].visually-hidden {
 
 .service-item p {
   display: block;
-  max-width: 250px;
 
-  margin: 0;
-  margin-bottom: 35px;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 33px;
+  max-width: 250px;
 }
 
 .button-green {
@@ -459,28 +438,26 @@ input[type="radio"].visually-hidden {
 
 .column-left {
   margin-top: 35px;
-  width: 660px;
-
+  width: 670px;
 }
 
-.about-lead {
-  display: inline-block;
-
-  margin: 0;
-  padding: 0;
-}
-
-.about-lead b {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
-  color: #000000;
-
-  vertical-align: baseline;
+.about-info p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .about-info p + p {
-  margin-top: 33px;
+  margin-top: 31px;
+}
+
+.about-lead {
+  font-size: 45px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.about-lead b {
+  font-weight: 500;
 }
 
 .features {
@@ -488,17 +465,20 @@ input[type="radio"].visually-hidden {
 }
 
 .features p {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.features b {
+  text-transform: uppercase;
 }
 
 .features-list {
-  margin: 0;
-  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 0;
+  padding-left: 0;
 
   list-style: none;
-
-  vertical-align: baseline;
 }
 
 .features-list li {
@@ -508,26 +488,24 @@ input[type="radio"].visually-hidden {
 }
 
 .features-list li + li {
-  margin-top: 23px;
+  margin-top: 24px;
 }
 
 .features-list li::before {
   content: "";
 
   position: absolute;
-  top: 11px;
+  top: 12px;
   left: 1px;
 
   width: 25px;
   height: 2px;
 
-background-color: #fb565a;
+  background-color: #fb565a;
 }
 
 .features b {
   display: block;
-
-  padding-bottom: 24px;
 
   font-size: 16px;
   line-height: 24px;
@@ -566,7 +544,7 @@ background-color: #fb565a;
 
 .advantages-percents td {
   font-size: 45px;
-  line-height: 45px;/*в макете 10.06*/
+  line-height: 45px;
   font-weight: 700;
   color: #000000;
 }
@@ -614,7 +592,7 @@ background-color: #fb565a;
   height: 180px;
 }
 
-.clients-list li:first-child, /*--Тест на переполнение--*/
+.clients-list li:first-child,
 .clients-list li:last-child {
   width: 280px;
 }
@@ -674,9 +652,11 @@ background-color: #fb565a;
   margin-top: 80px;
 }
 
-.main-footer .container {
-  display: flex;
+.main-footer .container,
+.inner-footer .container {
+  position: relative;
 
+  display: flex;
 }
 
 .find-us {
@@ -684,13 +664,13 @@ background-color: #fb565a;
 
   margin: 0;
   padding: 0;
-  /*max-height: 416px;/*--Если не задана ширина у меня появляетя белая полоса ниже карты  примерно 10px, которая не относится ни к одному элементу --*/
 
-  background-color: #ffffff; /*#ccc?*/
+
+  background-color: /*#ffffff;*/ #ccc;
 }
 
 .find-us iframe {
-  position: relative;
+  display: block;
   z-index: 2;
 
   margin: 0;
@@ -700,7 +680,7 @@ background-color: #fb565a;
   border: none;
 }
 
-.find-us img {
+/*.find-us img {
   position: absolute;
   top: 0;
   left: 0;
@@ -709,14 +689,14 @@ background-color: #fb565a;
   margin: 0;
   width: 100%;
   height: 416px;
-}
+}*/
 
 .contacts {
   z-index: 3;
   position: absolute;
 
   top: 54px;
-  left: 185px;
+  left: 20px;
 
   padding: 50px 50px 47px;
   width: 319px;
@@ -733,15 +713,18 @@ background-color: #fb565a;
 }
 
 .popup-open {
-  margin-top: 15px;
-  padding: 15px 43px;
+  display: block;
+  width: 100%;
+
+  margin-top: 37px;
+
 }
 
 .contacts .studio-name {
-  margin-bottom: 23px;
+  margin-bottom: 24px;
 
   font-size: 18px;
-  line-height: 30px; /*--28?--*/
+  line-height: 28px;
   font-weight: 700;
   color: #000000;
 }
@@ -749,7 +732,7 @@ background-color: #fb565a;
 .footer-social {
   display: flex;
   align-items: flex-start;
-  padding: 69px 0;/*--Не попадает в PP--*/
+  padding: 69px 0;
 }
 
 .social-buttons {
@@ -765,7 +748,7 @@ background-color: #fb565a;
 }
 
 .social-buttons li {
-  margin-right: 11px;
+  margin-right: 12px;
 }
 
 .social-button {
@@ -825,9 +808,9 @@ background-color: #fb565a;
 	top: 50%;
 	left: 50%;
 
-  padding: 68px 100px 85px 100px;
+  padding: 69px 100px 84px 100px;
 	width: 960px;
-  min-height: 590px;
+  height: 590px;
 
   transform: translate(-480px, -295px);
 
@@ -849,8 +832,8 @@ background-color: #fb565a;
 
 .form-close {
   position: absolute;
-  top: 78px;
-  right: 89px;
+  top: 79px;
+  right: 90px;
 
   width: 21px;
   height: 21px;
@@ -889,7 +872,11 @@ background-color: #fb565a;
 
 .contact-item {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
+}
+
+.contact-item:last-of-type {
+  margin-bottom: 40px;
 }
 
 .contact-item label {
@@ -904,8 +891,7 @@ background-color: #fb565a;
 
 .contact-item input {
 
-  padding: 15px;
-  padding-right: 15px;
+  padding: 13px 14px;
   width: 360px;
 
   font-size: 16px;
@@ -935,7 +921,7 @@ background-color: #fb565a;
 }
 
 .contact-form textarea {
-  padding: 14px;
+  padding: 12px 13px;
   width: 760px;
 
   font-size: 16px;
@@ -966,11 +952,9 @@ background-color: #fb565a;
 }
 
 .contact-form button {
-  display: block;
+  padding-left: 83px;
+  padding-right: 85px;
 
-  margin-top: 5px;
-  padding: 15px 0;
-  width: 260px;
 }
 
 .popup-show {
@@ -1024,8 +1008,8 @@ background-color: #fb565a;
 .page-title {
   margin: 0;
   padding: 0;
-  padding-top: 80px;
-  padding-bottom: 105px;
+  padding-top: 71px;
+  padding-bottom: 109px;
 
   font-size: 55px;
   line-height: 55px;
@@ -1040,32 +1024,28 @@ background-color: #fb565a;
   display: flex;
   justify-content: space-between;
 
-  padding-top: 58px;
 }
 
 /*---Фильтр---*/
 
 .filter {
-  box-sizing: content-box;/*---*/
+  box-sizing: content-box;
 
+  margin-top: 57px;
   width: 260px;
 }
 
 
 .filter fieldset {
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 51px;
   padding: 0;
 
   border: none;
 }
 
-.filter fieldset:last-of-type {
-  margin-bottom: 29px;
-}
-
 .filter .filter-item {
-    margin-bottom: 60px;/*---*/
+    margin-bottom: 60px;
 }
 
 .filter legend {
@@ -1090,6 +1070,11 @@ background-color: #fb565a;
 .filter-feature {
   margin-bottom: 20px;
   padding-left: 36px;
+}
+
+.filter-option:last-of-type,
+.filter-feature:last-of-type {
+  margin-bottom: 0;
 }
 
 .filter-option label,
@@ -1118,14 +1103,14 @@ background-color: #fb565a;
 
 .filter-input-checkbox:disabled label,
 .filter-input-radio:disabled label {
-  color: #rgba(40, 49, 54, 0.3);
+  color: rgba(40, 49, 54, 0.3);
 }
 
 .filter-input-checkbox + label::before {
   content: "";
   position: absolute;
-  left: -36px;
-  top: -4px;
+  left: -35px;
+  top: 0;
 
 
   width: 27px;
@@ -1297,8 +1282,6 @@ background-color: #fb565a;
   padding: 10px 10px;
   margin-left: 9px;
 
-  font-family: "Roboto", Arial, sans-serif;
-  font-size: 16px;
   text-align: center;
   color: #283136;
 
@@ -1339,12 +1322,15 @@ background-color: #fb565a;
 /*---Сортировка---*/
 .catalog-sorting {
   display: flex;
+  align-items: center;
 
-  margin-bottom : 52px;
+  margin-bottom : 53px;
 }
 
 
-.catalog-sorting span {
+.sorting-title {
+  margin-right: auto;
+
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
@@ -1352,113 +1338,77 @@ background-color: #fb565a;
   text-transform: uppercase;
 }
 
-.test {
-  margin-left: 267px;
+.sorting-type,
+.sorting-updown {
+  display: flex;
+  align-items: center;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
 }
 
-.test a {
-/*  position: relative;*/
+.sorting-type {
+  margin-right: 48px;
+}
 
-  margin-right: 23px;
+
+.sorting-type a {
 
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
-}
-
-.test a:last-child {
-  margin-right: 0;
-}
-
-.catalog-sorting a:hover,
-.catalog-sorting a:focus {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-.catalog-sorting a:active,
-.active {
   color: #000000;
+  opacity: 0.3;
 }
 
-.sort-updown a {
-  position: relative;
-
-  margin: 0;
-  margin-left: auto;
+.sorting-type a:hover,
+.sorting-type a:focus {
+  opacity: 0.6;
 }
 
-.arrow-down::before {
-  content: "";
-  position: absolute;
-
-  top: 5px;
-  left: 45px;
-
-  width: 11px;
-  height: 10px;
-
-  background-image: url("../img/icon-down-dir.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
-  opacity: 0.2;
-}
-
-.arrow-down:hover::before,
-.arrow-down:focus::before {
-  opacity: 0.4;
-}
-
-.arrow-down:active::before {
+.sorting-type a:active {
   opacity: 1;
 }
 
-.arrow-up::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 75px;
+.sorting-type {
+  margin-right: 48px;
+}
 
-  width: 11px;
-  height: 10px;
+.sorting-type li:not(:last-child) {
+  margin-right: 27px;
+}
 
-  background-image: url("../img/icon-up-dir.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
+.sorting-updown li:not(:last-child) {
+  margin-right: 18px;
+}
 
+.sorting-updown svg {
+  display: block;
   opacity: 0.2;
 }
 
-.arrow-up:hover::before,
-.arrow-up:focus::before {
+.sorting-updown svg:hover,
+.sorting-updown svg:focus {
   opacity: 0.4;
 }
 
-.arrow-up:active::before {
- opacity: 1;
-}
-
-.sort-updown .active::before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 45px;
-
-  width: 11px;
-  height: 10px;
-
-  background-image: url("../img/icon-down-dir.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-
+.sorting-updown svg:active {
   opacity: 1;
 }
+
+.active svg {
+  opacity: 1;
+}
+
 /*---Сортировка---*/
 
 /*---Каталог---*/
 
 .right-column {
+  margin-top: 55px;
   width: 760px;
 
 }
@@ -1479,7 +1429,7 @@ background-color: #fb565a;
   width: 360px;
   margin-bottom: 33px;
 
-
+  border-radius: 3px 3px 0 0;
   background-color: #e9e9e9;
 }
 
@@ -1489,8 +1439,8 @@ background-color: #fb565a;
 
   padding-top: 40px;
 
-  outline: 1px solid #e5e5e5;/*--Не рамка--*/
   border-radius: 3px 3px 0 0;
+  border: 1px solid #e5e5e5;/*--Не рамка--*/
 }
 
 .catalog-item:hover {
@@ -1513,7 +1463,7 @@ background-color: #fb565a;
 
 .catalog-item img {
   width: 360px;
-  height: 576px;
+  height: 574px;
 
   vertical-align: middle;
 }
@@ -1523,32 +1473,40 @@ background-color: #fb565a;
   position: absolute;
   top:385px;
 
+  padding-top: 28px;
+  padding-bottom: 43px;
   height: 231px;
   width: 360px;
-  padding-top: 7px; /*60px 43px 60px;*/
-  padding-left: 80px;
-  padding-right: 80px;
-
 
   opacity: 0;
-
+  text-align: center;
   background-color: #eeeeee;
-
 }
+
+.sedona,
+.borodinski,
+.mishka {
+  padding-left: 79px;
+  padding-right: 79px;
+}
+
+.pink,
+.a-plus,
+.kvast {
+  padding-left: 61px;
+  padding-right: 61px;
+}
+
 
 .catalog-item:hover .catalog-item-hidden {
   opacity: 1;
-
 }
 
 .catalog-item-price {
-  display: block;
-
-  width: 200px;
-
   margin-top: 30px;
-  padding: 15px 0;
-}
+  padding-right: 60px;
+  padding-left: 60px;
+  }
 
 .item-title a {
   font-size: 18px;
@@ -1559,12 +1517,21 @@ background-color: #fb565a;
 }
 
 .item-title {
+  overflow: hidden;
+  margin-top: 0;
+  margin-bottom: 14px;
+
   text-align: center;
 }
 
 .catalog-item p {
+  overflow: hidden;
+  margin: 0;
+
   font-size: 16px;
   line-height: 18px;
+  font-weight: 400;
+
   color: #666666;
   text-align: center;
 }
@@ -1574,26 +1541,46 @@ background-color: #fb565a;
 /*---Пагинация---*/
 
 .pagination-list {
+  display: flex;
+  justify-content: flex-start;
   padding: 0;
   margin: 0;
+  list-style: none;
 }
 
 .pagination-item {
-  display: inline-block;
+  width: 50px;
+  height: 50px;
 
-  margin-right: 8px;
-  padding: 15px 20px;
+  background-color: #eeeeee;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+
+  margin-right: 11px;
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+.next-page {
+  width: 260px;
+}
+
+.pagination-item a {
+  display: block;
+
+  margin: 0;
+  padding: 16px 21px;
 
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
-  text-align: center;
-  vertical-align: center;
+}
 
-  background-color: #eeeeee;
-  border-radius: 3px;
+.pagination-item:last-of-type {
+  margin-right: 0;
 }
 
 .pagination-list a:hover,
@@ -1609,19 +1596,19 @@ background-color: #fb565a;
 }
 
 
-.pagination-item-current {
-  padding: 13px 18px;
-
+.current-page a {
+  padding: 13px 15px;
+  border: 3px solid #dbdbdb;
   background-color: #ffffff;
-  border: solid 3px #dbdbdb;
+
 }
 
-.pagination-item-next {
-  padding-left: 75px;
-  padding-right: 75px;
+/*.pagination-item-next {
+  padding-left: 76px;
+  padding-right: 76px;
 
-  text-align: center;
-}
+  text-align: center;*/
+
 /*---Пагинация---*/
 /*--Каталог--*/
 
